@@ -3,10 +3,9 @@ import React from 'react'
 function Login({history}) {
     const home=()=>{
         history.push('/')
-        //window.location.reload();
     }
     return(
-        <button className="btn btn-primary" onClick={home}>Login</button>
+        <button className="btn btn-primary" onClick={()=> home({history})}>Login</button>
     )
 }
 
